@@ -58,11 +58,12 @@ A basic todo list showing:
 - State-based item management
 - Add/delete todos dynamically
 
-### 3️⃣ Users List
-A mock user management UI:
-- Displays a list of users
-- Demonstrates component composition
-- Can be extended to fetch data or use mock APIs
+### 3️⃣ Users List (API-based)
+A user list fetched from a public REST API:
+- Uses `fetch()` to retrieve data from [`https://jsonplaceholder.typicode.com/users`](https://jsonplaceholder.typicode.com/users)
+- Demonstrates `useEffect` and async data fetching
+- Maps over API data and displays user info in a clean format
+- Great example of working with external APIs in React
 
 ---
 
@@ -70,6 +71,8 @@ A mock user management UI:
 
 - Component-based React architecture
 - React state & props handling
+- Data fetching with `fetch` and `useEffect`
+- Async/await usage in React
 - (Optional) React Router for page navigation
 - Static asset management (`react.svg`)
 - Vite configuration and setup
@@ -121,6 +124,7 @@ Open your browser and navigate to `http://localhost:5173`
 - **JavaScript (ES6+)**
 - **ESLint** – Code linting
 - **npm** – Package manager
+- **REST API** – For fetching live user data in the Users mini-project
 
 ---
 
@@ -135,3 +139,4 @@ This project is open source and available under the [MIT License](LICENSE).
 - [React](https://reactjs.org)
 - [Vite](https://vitejs.dev)
 - [ESLint](https://eslint.org)
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com) – for free fake REST API
